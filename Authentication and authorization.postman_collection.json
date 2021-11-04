@@ -1,0 +1,417 @@
+{
+	"info": {
+		"_postman_id": "0789cf98-ce2a-43b9-8c77-60abb8c72d2c",
+		"name": "Authentication and authorization",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register OT member",
+			"item": [
+				{
+					"name": "positive",
+					"item": [
+						{
+							"name": "1.OT member",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"simiiii1988@mail.com\",\r\n  \"password\": \"19866666666\",\r\n  \"firstname\": \"simiiiiiiiii\",\r\n  \"lastname\": \"simiasdf\",\r\n  \"username\": \"simiuser\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://165.227.200.62:5001/api/v1/field-force/auth/register-admin-user",
+									"protocol": "http",
+									"host": [
+										"165",
+										"227",
+										"200",
+										"62"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"field-force",
+										"auth",
+										"register-admin-user"
+									]
+								},
+								"description": "test result\n{\n    \"message\": \"Successfully registered admin user simiuser.\",\n    \"status\": \"success\"\n}"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "negative",
+					"item": [
+						{
+							"name": "1.1 register OT member without email address",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"\",\r\n  \"password\": \"19866666666\",\r\n  \"firstname\": \"simiiiiiiiii\",\r\n  \"lastname\": \"simiasdf\",\r\n  \"username\": \"simiuser\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{serverAddress}}/api/v1/field-force/auth/register-admin-user",
+									"host": [
+										"{{serverAddress}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"field-force",
+										"auth",
+										"register-admin-user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OTmember Copy 5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"simiiii1988@mail.com\",\r\n  \"password\": \"19866666666\",\r\n  \"firstname\": \"simiiiiiiiii\",\r\n  \"lastname\": \"simiasdf\",\r\n  \"username\": \"simiuser\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://165.227.200.62:5001/api/v1/field-force/auth/register-admin-user",
+									"protocol": "http",
+									"host": [
+										"165",
+										"227",
+										"200",
+										"62"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"field-force",
+										"auth",
+										"register-admin-user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OTmember Copy 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"simiiii1988@mail.com\",\r\n  \"password\": \"19866666666\",\r\n  \"firstname\": \"simiiiiiiiii\",\r\n  \"lastname\": \"simiasdf\",\r\n  \"username\": \"simiuser\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://165.227.200.62:5001/api/v1/field-force/auth/register-admin-user",
+									"protocol": "http",
+									"host": [
+										"165",
+										"227",
+										"200",
+										"62"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"field-force",
+										"auth",
+										"register-admin-user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OTmember Copy 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"simiiii1988@mail.com\",\r\n  \"password\": \"19866666666\",\r\n  \"firstname\": \"simiiiiiiiii\",\r\n  \"lastname\": \"simiasdf\",\r\n  \"username\": \"simiuser\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://165.227.200.62:5001/api/v1/field-force/auth/register-admin-user",
+									"protocol": "http",
+									"host": [
+										"165",
+										"227",
+										"200",
+										"62"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"field-force",
+										"auth",
+										"register-admin-user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "register OT member without email,password",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"\",\r\n  \"password\": \"\",\r\n  \"firstname\": \"simiiiiiiiii\",\r\n  \"lastname\": \"simiasdf\",\r\n  \"username\": \"simiuser\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{serverAddress}}/api/v1/field-force/auth/register-admin-user",
+									"host": [
+										"{{serverAddress}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"field-force",
+										"auth",
+										"register-admin-user"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "register company",
+			"item": [
+				{
+					"name": "positive",
+					"item": [
+						{
+							"name": "2.1. Create a new company",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"sriimzivi\",\r\n  \"address\": \"801 legacyyy ave\",\r\n  \"tin\": \"8032215\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://165.227.200.62:5001/api/v1/field-force/auth/register-company",
+									"protocol": "http",
+									"host": [
+										"165",
+										"227",
+										"200",
+										"62"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"field-force",
+										"auth",
+										"register-company"
+									]
+								},
+								"description": "{\n    \"data\": {\n        \"company_address\": \"801 legacyyy ave\",\n        \"company_id\": 26173,\n        \"company_name\": \"sriimzivi\",\n        \"tin\": \"8032215\"\n    },\n    \"message\": \"Successfully registered company 'sriimzivi' .\",\n    \"status\": \"success\"\n}"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "negative",
+					"item": [
+						{
+							"name": "2.2. Create a new company without name",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"\",\r\n  \"address\": \"801 legacyyy ave\",\r\n  \"tin\": \"8032215\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://165.227.200.62:5001/api/v1/field-force/auth/register-company",
+									"protocol": "http",
+									"host": [
+										"165",
+										"227",
+										"200",
+										"62"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"field-force",
+										"auth",
+										"register-company"
+									]
+								},
+								"description": "Objective: As a tester i should not able to create a company without name.\n\nSE:Shahed\nPO:Pranto\nTester:Simi\n\nTest data:\n{\n  \"name\": \"\",\n  \"address\": \"801 legacyyy ave\",\n  \"tin\": \"8032215\"\n}\n\n\nExpected result:As a tester i should not be able to create a company without name .\n\nActual result:As a tester i was unable to log in without name.\n\nTest result:\n\n{\n    \"message\": [\n        \"name must be non-empty\"\n    ],\n    \"status\": \"failed\"\n}\nStatus code:403 forbidden"
+							},
+							"response": []
+						},
+						{
+							"name": "2.1. Create a new company Copy 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"sriimzivi\",\r\n  \"address\": \"801 legacyyy ave\",\r\n  \"tin\": \"8032215\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://165.227.200.62:5001/api/v1/field-force/auth/register-company",
+									"protocol": "http",
+									"host": [
+										"165",
+										"227",
+										"200",
+										"62"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"field-force",
+										"auth",
+										"register-company"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2.1. Create a new company Copy 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"sriimzivi\",\r\n  \"address\": \"801 legacyyy ave\",\r\n  \"tin\": \"8032215\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://165.227.200.62:5001/api/v1/field-force/auth/register-company",
+									"protocol": "http",
+									"host": [
+										"165",
+										"227",
+										"200",
+										"62"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"field-force",
+										"auth",
+										"register-company"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2.1. Create a new company Copy 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"sriimzivi\",\r\n  \"address\": \"801 legacyyy ave\",\r\n  \"tin\": \"8032215\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://165.227.200.62:5001/api/v1/field-force/auth/register-company",
+									"protocol": "http",
+									"host": [
+										"165",
+										"227",
+										"200",
+										"62"
+									],
+									"port": "5001",
+									"path": [
+										"api",
+										"v1",
+										"field-force",
+										"auth",
+										"register-company"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
